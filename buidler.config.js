@@ -2,6 +2,12 @@ const path = require('path');
 const url = require('url');
 
 require('dotenv').config();
+require('buidler-abi-exporter');
+
+abiExporter: {
+  path: './abi'
+}
+
 
 const { InfuraProvider } = require('@ethersproject/providers');
 const { fromPrivateKey } = require('ethereumjs-wallet');
